@@ -1,6 +1,6 @@
 # Clean Architecture Note App
 
-<p>MVVM / CRUD / Jetpack Compose / Room Database</p>
+<p>Aplicativo de notas desenvolvido aplicando os conceitos do Clean Architecture.</p>
 
 # Features
 - [x] Listar anotações
