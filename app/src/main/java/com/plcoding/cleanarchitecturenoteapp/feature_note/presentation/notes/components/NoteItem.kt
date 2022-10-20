@@ -31,10 +31,10 @@ fun NoteItem(
     cutCornerSize: Dp = 30.dp,
     onDeleteClick: () -> Unit
 ) {
-
-    Box(modifier = modifier)
-    {
-        Canvas(modifier = modifier.matchParentSize()) {
+    Box(
+        modifier = modifier
+    ) {
+        Canvas(modifier = Modifier.matchParentSize()) {
             val clipPath = Path().apply {
                 lineTo(size.width - cutCornerSize.toPx(), 0f)
                 lineTo(size.width, cutCornerSize.toPx())
@@ -81,16 +81,15 @@ fun NoteItem(
                 overflow = TextOverflow.Ellipsis
             )
         }
-
         IconButton(
             onClick = onDeleteClick,
             modifier = Modifier.align(Alignment.BottomEnd)
         ) {
             Icon(
                 imageVector = Icons.Default.Delete,
-                contentDescription = "Delete note"
+                contentDescription = "Delete note",
+                tint = MaterialTheme.colors.onSurface
             )
         }
     }
-
 }
