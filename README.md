@@ -7,6 +7,7 @@
 - [x] Adicionar anotações
 - [x] Deletar anotações
 - [x] Editar anotações
+- [x] Ordernação das anotações
 
 # Tecnologias
 As seguintes tecnologias foram utilizadas no projeto:
